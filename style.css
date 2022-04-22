@@ -1,0 +1,228 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  grid-template-rows: repeat(2, 230px);
+  justify-content: center;
+  gap: 0px;
+  margin-top: 80px;
+}
+
+.design {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+}
+
+.name {
+  width: 105px;
+}
+
+.item1 {
+  grid-row: 1/3;
+  height: 430px;
+}
+
+/* Box Designing-1 */
+.box1 {
+  background-color: hsl(246, 80%, 60%);
+  width: auto;
+  height: 300px;
+  border-radius: 7%;
+  position: relative;
+  z-index: 2;
+}
+
+.innerItem {
+  padding: 30px 0px 0px 30px;
+}
+.profile {
+  width: 70px;
+  height: auto;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.report {
+  color: rgb(196, 178, 178);
+  margin-top: 20px;
+}
+
+.timePeriod {
+  background-color: hsl(235, 46%, 20%);
+  width: 200px;
+  height: 160px;
+  margin-top: -30px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.times {
+  margin: 50px 0px 0px 30px;
+  font-size: 18px;
+}
+
+.time {
+  list-style: none;
+  margin: 15px 0px 0px 0px;
+  color: gray;
+}
+.time:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.active {
+  color: white;
+}
+
+/* Remainging Box model */
+
+.boxColor {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: auto;
+  height: 50px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 13px;
+}
+#bgColorOfLogo1 {
+  background-color: hsl(15, 100%, 70%);
+}
+#bgColorOfLogo2 {
+  background-color: hsl(195, 74%, 62%);
+}
+#bgColorOfLogo3 {
+  background-color: hsl(348, 100%, 68%);
+}
+#bgColorOfLogo4 {
+  background-color: hsl(145, 58%, 55%);
+}
+#bgColorOfLogo5 {
+  background-color: hsl(264, 64%, 52%);
+}
+#bgColorOfLogo6 {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.boxContent {
+  background-color: hsl(235, 46%, 20%);
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  border-radius: 7%;
+  margin-top: -10px;
+  padding: 0 0 10px 0;
+  z-index: 2;
+}
+
+.personalWork {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 25px 0px;
+}
+.workingDeatails {
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+}
+
+@media only screen and (max-width: 375px) {
+  .gridContainer {
+    max-width: 375px;
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(6, 170px);
+    gap: 0px;
+    margin-top: 0px;
+  }
+
+  .box1 {
+    width: auto;
+    height: 150px;
+    padding-bottom: -100px;
+    border-radius: 10px;
+  }
+
+  .timePeriod {
+    width: 340px;
+    height: 110px;
+    margin-top: -30px;
+  }
+  .report {
+    margin: -70px 0px 0px 94px;
+  }
+  .name {
+    width: 240px;
+    margin-left: 94px;
+    font-size: 28px;
+  }
+
+  .item1 {
+    margin-top: 88px;
+  }
+  .times {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
+  .time {
+    margin: 10px;
+  }
+
+  .design {
+    width: 340px;
+    height: 150px;
+    margin-left: -70px;
+    border-radius: 10px;
+  }
+
+  .boxContent {
+    width: 340px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .workingDeatails {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .personalWork {
+    width: 300px;
+    height: 36px;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .lastWeek {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+  }
+  .hour {
+    width: 400px;
+  }
+  .item7 {
+    margin-top: 20px;
+    margin-bottom: 280px;
+  }
+}
